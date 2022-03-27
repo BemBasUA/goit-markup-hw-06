@@ -428,8 +428,8 @@ body {
 .subscribe-row > .subscribe.button:hover {
   background-color: #1967a6;
 }
-.subscribe.button > .text {
-  margin-right: 10px;
+.subscribe.button > .icon {
+  margin-left: 10px;
 }
 
 /* Portfolio */
