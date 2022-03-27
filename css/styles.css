@@ -380,6 +380,58 @@ body {
 .address .link:focus {
   color: var(--accent-color);
 }
+/* Subscribe-box */
+.subscribe-box {
+  margin-left: auto;
+}
+.subscribe-box > .text {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.subscribe-row {
+  display: flex;
+}
+.subscribe-row > .form {
+  margin-right: 12px;
+  width: 358px;
+  border-radius: 4px;
+}
+.subscribe-box .form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--primary-white-color);
+  background-color: inherit;
+}
+.subscribe-box .form-input:focus {
+  outline: 1px solid var(--primary-white-color);
+}
+.subscribe-box .form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-row > .subscribe.button {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms var(--primary-transition);
+}
+.subscribe-row > .subscribe.button:hover {
+  background-color: #1967a6;
+}
+.subscribe.button > .text {
+  margin-right: 10px;
+}
+
 /* Portfolio */
 .examples-list img {
   display: block;
