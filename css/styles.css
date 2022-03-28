@@ -561,6 +561,13 @@ body {
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
+  transition: color 250ms var(--primary-transition);
+}
+.modal-close-btn:hover {
+  color: var(--accent-color);
+}
+.modal-close-btn .icon {
+  fill: currentColor;
 }
 .modal-form > .text {
   text-align: center;
@@ -576,7 +583,7 @@ body {
 .modal-form > .form-field:not(:last-child) {
   margin-bottom: 10px;
 }
-.modal-form > .form-field:last-child {
+.modal-form > .form-field:nth-child(5) {
   margin-bottom: 20px;
 }
 .modal-form .form-label {
@@ -619,6 +626,7 @@ body {
   fill: currentColor;
 }
 .modal-form .comment-area {
+  height: 120px;
   padding: 16px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -636,6 +644,18 @@ body {
 .modal-form .license-agreement {
   display: flex;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.license-agreement > label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.modal .link {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 .modal-form .checkbox-hidden {
   position: absolute;
@@ -648,6 +668,7 @@ body {
 .modal-form .checkbox {
   position: relative;
   display: inline-block;
+  margin-right: 7px;
   width: 16px;
   height: 15px;
   border: 2px solid #000;
